@@ -1,0 +1,96 @@
+.menu__tabs {
+  display: inline-flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  padding: 0.4rem;
+  margin-bottom: 2.5rem;
+  background: var(--beige);
+  border-radius: 999px;
+}
+
+.menu__tab {
+  padding: 0.65rem 1.5rem;
+  font: 600 1rem var(--font-body);
+  color: var(--roast);
+  background: transparent;
+  border: 0;
+  border-radius: 999px;
+  cursor: pointer;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.menu__tab:hover {
+  background: var(--sand);
+}
+
+.menu__tab.is-active {
+  background: var(--espresso);
+  color: var(--cream);
+}
+
+.menu__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(255px, 1fr));
+  gap: 1.75rem;
+}
+
+.menu-card {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  background: var(--card);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-soft);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.menu-card:hover {
+  transform: translateY(-6px);
+  box-shadow: var(--shadow-lift);
+}
+
+.menu-card__media {
+  aspect-ratio: 4 / 3;
+  overflow: hidden;
+}
+
+.menu-card__img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.menu-card:hover .menu-card__img {
+  transform: scale(1.07);
+}
+
+.menu-card__body {
+  padding: 1.25rem 1.4rem 1.5rem;
+}
+
+.menu-card__row {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 0.75rem;
+  margin-bottom: 0.5rem;
+}
+
+.menu-card h3 {
+  font-size: 1.3rem;
+}
+
+.menu-card__price {
+  flex-shrink: 0;
+  padding: 0.15rem 0.75rem;
+  font-weight: 700;
+  color: var(--sage-dark);
+  background: var(--sage-soft);
+  border-radius: 999px;
+}
+
+.menu-card p {
+  font-size: 0.98rem;
+  color: var(--roast);
+}

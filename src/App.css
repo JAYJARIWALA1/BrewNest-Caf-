@@ -1,0 +1,17 @@
+/* Section backgrounds: alternating cream and beige keeps the page rhythm calm */
+.menu {
+  background: var(--cream);
+}
+
+.about {
+  background: var(--beige);
+}
+
+.contact {
+  background: var(--cream);
+}
+
+/* Keep the floating button from covering the footer text on small screens */
+main {
+  display: block;
+}
